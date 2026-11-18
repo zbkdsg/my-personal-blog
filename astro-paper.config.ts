@@ -2,7 +2,7 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
+    url: "https://my-personal-blog.zbk3089065771.workers.dev/",
     title: "ZBK's Website",
     description: "A minimal, responsive and SEO-friendly Astro blog theme.",
     author: "溯渊",
