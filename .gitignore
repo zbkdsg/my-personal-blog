@@ -38,3 +38,6 @@ public/pagefind
 
 # docker compose
 compose.override.yaml
+
+# 本地字体试验页，不发布
+src/pages/font-test.astro

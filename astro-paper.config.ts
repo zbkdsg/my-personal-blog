@@ -28,7 +28,7 @@ export default defineAstroPaperConfig({
     toc: true,
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
+    { name: "github",   url: "https://github.com/zbkdsg/my-personal-blog" },
     { name: "x",        url: "https://x.com/username" },
     { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
     { name: "mail",     url: "mailto:3089065771@qq.com" },

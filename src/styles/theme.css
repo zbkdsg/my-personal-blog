@@ -7,7 +7,63 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --font-app: var(--font-google-sans-code);
+
+  /* ===== 字体 =====
+   * 用法：在任意元素的 class 里加 font-xxx，例如 <h1 class="font-song">
+   * 想全站换字体：把下面 --font-app 的值换成别的字体栈即可。
+   * 系统字体依赖设备安装；“本地下载”字体由 local-fonts.css 加载项目内的文件。
+   * Google Sans Code 仍由现有 Astro 配置加载；缺字时按逗号后的顺序回退。
+   */
+
+  /* 站点默认字体（当前 = Google Sans Code，拉丁等宽 + 中文回退） */
+  --font-app: "SimSun", "Songti SC", "Noto Serif SC", serif;
+
+  /* —— 本地下载 · 中文行草/毛笔（C1、C2、C4）—— */
+  --font-zhi-mang-xing: "Zhi Mang Xing", "KaiTi", "Kaiti SC", serif;
+  --font-liu-jian-mao-cao: "Liu Jian Mao Cao", "KaiTi", "Kaiti SC", serif;
+  --font-ma-shan-zheng: "Ma Shan Zheng", "KaiTi", "Kaiti SC", serif;
+
+  /* —— 本地下载 · 英文花体/手写（E2、E3、E4、E6）—— */
+  --font-allura: "Allura", "KaiTi", "Kaiti SC", cursive;
+  --font-alex-brush: "Alex Brush", "KaiTi", "Kaiti SC", cursive;
+  --font-dancing-script: "Dancing Script", "KaiTi", "Kaiti SC", cursive;
+  --font-sacramento: "Sacramento", "KaiTi", "Kaiti SC", cursive;
+
+  /* —— 中文 · 无衬线（黑体类）—— */
+  --font-yahei: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+  --font-deng: "DengXian", "Microsoft YaHei", "PingFang SC", sans-serif;
+  --font-hei: "SimHei", "Heiti SC", "Microsoft YaHei", sans-serif;
+  --font-xihei: "STXihei", "Microsoft YaHei", "PingFang SC", sans-serif;
+
+  /* —— 中文 · 衬线（宋体类）—— */
+  --font-song: "SimSun", "Songti SC", "Noto Serif SC", serif;
+  --font-stsong: "STSong", "Songti SC", "SimSun", serif;
+
+  /* —— 中文 · 楷体/仿宋 —— */
+  --font-kai: "KaiTi", "Kaiti SC", "STKaiti", serif;
+  --font-fangsong: "FangSong", "STFangsong", "FangSong_GB2312", serif;
+
+  /* —— 英文 · 无衬线（界面、导航、简洁标题）—— */
+  --font-arial: Arial, Helvetica, sans-serif;
+  --font-verdana: Verdana, Geneva, sans-serif;
+  --font-tahoma: Tahoma, Verdana, sans-serif;
+  --font-trebuchet: "Trebuchet MS", Arial, sans-serif;
+  --font-segoe: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-calibri: Calibri, "Segoe UI", Arial, sans-serif;
+  --font-roboto: Roboto, "Segoe UI", Arial, sans-serif;
+  --font-open-sans: "Open Sans", "Segoe UI", Arial, sans-serif;
+
+  /* —— 英文 · 衬线（书面感、文章标题）—— */
+  --font-georgia: Georgia, "Times New Roman", serif;
+  --font-times: "Times New Roman", Times, serif;
+  --font-cambria: Cambria, Georgia, "Times New Roman", serif;
+
+  /* —— 英文 · 等宽（代码或等宽风格标题）—— */
+  --font-code: "Cascadia Mono", Consolas, "JetBrains Mono", monospace;
+  --font-consolas: Consolas, "Courier New", monospace;
+  --font-courier: "Courier New", Courier, monospace;
+  --font-cascadia: "Cascadia Code", "Cascadia Mono", Consolas, monospace;
+  --font-source-code: "Source Code Pro", Consolas, "Courier New", monospace;
 }
 
 /* Light theme values */

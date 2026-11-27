@@ -144,3 +144,20 @@
     }
   }
 }
+
+/* ===== 楷体标题 + 等宽代码 ===== */
+/* font-kai-in-prose */
+.app-prose h1,
+.app-prose h2,
+.app-prose h3,
+.app-prose h4 {
+  font-family: "KaiTi", "Kaiti SC", "STKaiti", "Microsoft YaHei", serif;
+}
+
+.app-prose code,
+.app-prose pre,
+.app-prose pre code,
+.astro-code,
+.astro-code code {
+  font-family: "Cascadia Mono", Consolas, "JetBrains Mono", monospace;
+}
